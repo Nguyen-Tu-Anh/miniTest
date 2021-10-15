@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label> <input type="text" placeholder="Nhập số a" id="soA"> x </label>
+<label> <input type="text" placeholder="Nhập số b" id="soB"> </label>
+<button onclick="tinh_toan()">Check</button>
+<h1 id="result"></h1>
+<script>
+    function tinh_toan() {
+        let numberA = +document.getElementById('soA').value;
+        let numberB = +document.getElementById('soB').value;
+        let S = numberA * numberB;
+        document.getElementById('result').innerHTML = S;
+    }
+</script>
+</body>
+</html>
